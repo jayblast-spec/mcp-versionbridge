@@ -4,6 +4,8 @@
 [![npm](https://img.shields.io/npm/v/mcp-versionbridge)](https://www.npmjs.com/package/mcp-versionbridge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 
+![How mcp-versionbridge bridges an old MCP handshake to a 2026-07-28 server](./docs/banner.svg)
+
 **Lets an MCP client stuck on the pre-2026-07-28 `initialize` handshake talk to a 2026-07-28 MCP server, with no changes to either side.**
 
 ## The gap this fills
