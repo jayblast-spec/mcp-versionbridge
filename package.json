@@ -1,0 +1,55 @@
+{
+  "name": "mcp-versionbridge",
+  "version": "0.1.0",
+  "description": "Bridges an MCP client stuck on the pre-2026-07-28 initialize handshake to a 2026-07-28 server that speaks per-request protocol versioning, with no changes to either side.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run build && npm run test"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "compatibility",
+    "bridge",
+    "version-negotiation",
+    "protocol"
+  ],
+  "author": "jayblast-spec",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayblast-spec/mcp-versionbridge.git"
+  },
+  "homepage": "https://github.com/jayblast-spec/mcp-versionbridge#readme",
+  "bugs": {
+    "url": "https://github.com/jayblast-spec/mcp-versionbridge/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.2",
+    "vitest": "^5.0.1"
+  }
+}
