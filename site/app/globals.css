@@ -1,0 +1,150 @@
+:root {
+  color-scheme: light;
+  --ink: #1f2328;
+  --muted: #57606a;
+  --line: #d0d7de;
+  --paper: #ffffff;
+  --canvas: #f6f8fa;
+  --link: #0969da;
+  --code: #f3f4f6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.masthead,
+main,
+footer {
+  width: min(46rem, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.masthead {
+  padding-top: 2.5rem;
+}
+
+.kicker {
+  margin: 0 0 0.35rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.15rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin: 2rem 0 0.6rem;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.lede {
+  margin: 0.85rem 0 0;
+  font-size: 1.08rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  margin-top: 1.1rem;
+}
+
+a {
+  color: var(--link);
+  text-underline-offset: 0.15em;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+}
+
+.diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
+  background: var(--paper);
+  border-radius: 12px;
+}
+
+p,
+li {
+  max-width: 68ch;
+}
+
+ol,
+ul {
+  padding-left: 1.25rem;
+}
+
+li + li {
+  margin-top: 0.35rem;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+}
+
+p code,
+li code {
+  padding: 0.1em 0.35em;
+  background: var(--code);
+  border-radius: 4px;
+}
+
+pre {
+  margin: 0.8rem 0 0;
+  padding: 0.9rem 1rem;
+  overflow: auto;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+pre code {
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+footer {
+  padding: 0.5rem 0 3rem;
+  color: var(--muted);
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .masthead {
+    padding-top: 1.5rem;
+  }
+}
