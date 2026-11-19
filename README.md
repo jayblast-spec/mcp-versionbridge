@@ -3,7 +3,7 @@
 [![CI](https://github.com/jayblast-spec/mcp-versionbridge/actions/workflows/ci.yml/badge.svg)](https://github.com/jayblast-spec/mcp-versionbridge/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/mcp-versionbridge)](https://www.npmjs.com/package/mcp-versionbridge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![Docs](https://img.shields.io/badge/docs-mcp--versionbridge.vercel.app-5eeab0)](https://mcp-versionbridge.vercel.app)
+[![Docs](https://img.shields.io/badge/docs-jayblast--spec.github.io-5eeab0)](https://jayblast-spec.github.io/mcp-versionbridge/)
 
 ![How mcp-versionbridge bridges an old MCP handshake to a 2026-07-28 server](./docs/banner.svg)
 

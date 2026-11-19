@@ -1,0 +1,13 @@
+{
+  "name": "mcp-versionbridge-site",
+  "private": true,
+  "scripts": {
+    "prebuild": "mkdir -p public && cp ../docs/banner.svg public/banner.svg",
+    "build": "next build"
+  },
+  "dependencies": {
+    "next": "16.4.6",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  }
+}
